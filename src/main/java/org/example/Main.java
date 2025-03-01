@@ -12,6 +12,7 @@ public class Main {
 
         System.out.println("Introduce el primer número:");
         num1 = scanner.nextDouble();
+        System.out.println("6. Raíz cuadrada");
 
         System.out.println("Introduce el operador (+, -, *, /, ^):");
         operador = scanner.next().charAt(0);
@@ -57,4 +58,11 @@ public class Main {
         System.out.println("El resultado es: " + resultado);
         scanner.close();
         }
+    public static double raizCuadrada(double num) {
+        if (num < 0) {
+            System.out.println("Error: No se puede calcular la raíz de un número negativo.");
+            return Double.NaN; // Retorna "Not a Number" si el número es negativo
+        }
+        return Math.sqrt(num);
+    }
     }
