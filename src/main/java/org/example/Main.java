@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Introduce el primer número:");
         num1 = scanner.nextDouble();
 
-        System.out.println("Introduce el operador (+, -, *, /):");
+        System.out.println("Introduce el operador (+, -, *, /, ^):");
         operador = scanner.next().charAt(0);
 
         System.out.println("Introduce el segundo numero:");
@@ -39,6 +39,10 @@ public class Main {
                     return; // Sale del programa
                 }
                 break;
+             case '^':
+                resultado = Math.pow(num1, num2);
+                break;
+
 
             default:
                 System.out.println("Operador inválido.");
