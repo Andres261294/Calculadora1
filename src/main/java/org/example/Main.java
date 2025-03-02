@@ -19,7 +19,7 @@ public class Main {
 
         System.out.println("Introduce el segundo numero:");
         num2 = scanner.nextDouble();
-// nooooo joven eso q
+
         double resultado;
 
         switch (operador) {
@@ -43,6 +43,7 @@ public class Main {
              case '^':
                 resultado = Math.pow(num1, num2);
                 break;
+
             case 6:
                 System.out.print("Ingrese el número: ");
                 num1 = scanner.nextDouble();
